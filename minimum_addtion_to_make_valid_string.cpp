@@ -9,6 +9,7 @@ public:
             if((word[i]=='a')&&i<n){
                 count++;
                 i++;
+                
             }
             if((word[i]=='b')&&i<n){
                 count++;
