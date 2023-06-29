@@ -9,6 +9,7 @@
                 Time Complexity: O(N), Only two traversals are needed.
                 Auxiliary Space: O(N), using the list will require extra space
 
+
     2=>   The idea is to use array elements as an index. To mark the presence of an element x,
            change the value at the index x to negative. But this approach doesn’t work if there
             are non-positive (-ve and 0) numbers. 
@@ -26,6 +27,7 @@
                         Auxiliary Space: O(1)
 
 
+
     3=>
             The idea is to mark the elements in the array which are greater than N and less than 1 with 1.
         Follow the steps below to solve the problem:
@@ -37,8 +39,11 @@
                     Now, for every ith number, increase arr[ (arr[i]-1) ] by N. But this will increase the value more than N. 
                             So, we will access the array by arr[(arr[i]-1)%N].
                     We will find now which index has a value less than N+1. Then i+1 will be our answer. 
+                    
                     Time Complexity: O(N), Traversing over the array
                     Auxiliary Space:  O(1) 
+
+
     4=>
             Smallest positive number missing from an unsorted array by Swapping:
                     The idea is to swap the elements which are in the range 1 to N should
